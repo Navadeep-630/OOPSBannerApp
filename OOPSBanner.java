@@ -1,7 +1,4 @@
-/**
- * OOPSBannerApp UC3 - OOPS Banner Application (Use Case 3)
- * Using String.join() for better memory efficiency
- */
+
 
 public class OOPSBanner {
 
