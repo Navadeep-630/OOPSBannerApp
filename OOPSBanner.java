@@ -1,35 +1,16 @@
-
 public class OOPSBanner {
-
     public static void main(String[] args) {
 
-        String[] O = {
-                "  ***  ",
-                " *   * ",
-                " *   * ",
-                " *   * ",
-                "  ***  "
+        String[] oops = {
+            "OOOO   OOOO   PPPP    SSSSS ",
+            "O   O  O   O  P   P  S      ",
+            "O   O  O   O  PPPP    SSSS   ",
+            "O   O  O   O  P           S  ",
+            "OOOO   OOOO   P      SSSSS   "
         };
 
-        String[] P = {
-                " ***** ",
-                " *   * ",
-                " ***** ",
-                " *     ",
-                " *     "
-        };
-
-        String[] S = {
-                " ***** ",
-                " *     ",
-                " ***** ",
-                "     * ",
-                " ***** "
-        };
-
-        // Print row by row
-        for (int i = 0; i < O.length; i++) {
-            System.out.println(O[i] + "  " + O[i] + "  " + P[i] + "  " + S[i]);
+        for (String line : oops) {
+            System.out.println(line);
         }
     }
 }
