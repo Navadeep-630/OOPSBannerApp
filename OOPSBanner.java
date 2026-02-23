@@ -1,16 +1,16 @@
 public class OOPSBanner {
+
+    // Static function
+    static void printBanner() {
+        System.out.println("OOOO   OOOO   PPPP    SSSSS");
+        System.out.println("O   O  O   O  P   P  S");
+        System.out.println("O   O  O   O  PPPP    SSSS");
+        System.out.println("O   O  O   O  P           S");
+        System.out.println("OOOO   OOOO   P      SSSSS");
+    }
+
     public static void main(String[] args) {
-
-        String[] oops = {
-            "OOOO   OOOO   PPPP    SSSSS ",
-            "O   O  O   O  P   P  S      ",
-            "O   O  O   O  PPPP    SSSS   ",
-            "O   O  O   O  P           S  ",
-            "OOOO   OOOO   P      SSSSS   "
-        };
-
-        for (String line : oops) {
-            System.out.println(line);
-        }
+        // Calling static function
+        printBanner();
     }
 }
