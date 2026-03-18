@@ -1,16 +1,19 @@
-public class OOPSBanner {
-    public static void main(String[] args) {
+class OOPSBanner {
 
-        String[] oops = {
-            "OOOO   OOOO   PPPP    SSSSS ",
-            "O   O  O   O  P   P  S      ",
-            "O   O  O   O  PPPP    SSSS   ",
-            "O   O  O   O  P           S  ",
-            "OOOO   OOOO   P      SSSSS   "
-        };
-
-        for (String line : oops) {
-            System.out.println(line);
+    // Inner class
+    class Inner {
+        void printOops() {
+            System.out.println(" ***    ***    ****    ****");
+            System.out.println("*   *  *   *   *   *  *    ");
+            System.out.println("*   *  *   *   ****    *** ");
+            System.out.println("*   *  *   *   *          *");
+            System.out.println(" ***    ***    *      **** ");
         }
+    }
+
+    public static void main(String[] args) {
+        OOPSBanner obj = new OOPSBanner();          // outer class object
+        OOPSBanner.Inner inner = obj.new Inner();   // inner class object
+        inner.printOops();                          // method call
     }
 }
