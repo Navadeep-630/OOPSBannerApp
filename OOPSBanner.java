@@ -41,4 +41,10 @@ public class OOPSBanner {
             System.out.println();
         }
     }
+
+    public static void main(String[] args) {
+        OOPSBanner obj = new OOPSBanner();          // outer class object
+        OOPSBanner.Inner inner = obj.new Inner();   // inner class object
+        inner.printOops();                          // method call
+    }
 }
